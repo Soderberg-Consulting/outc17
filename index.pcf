@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/jesse/outc17/xsl/page-all.xsl" title="Interior Page 1.1" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	<ouc:info><tcf>section.tcf</tcf><tmpl>interior.tmpl</tmpl></ouc:info>
+
+	<ouc:properties label="config">
+		
+	</ouc:properties>
+	
+
+</document>

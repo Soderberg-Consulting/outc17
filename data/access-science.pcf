@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/jesse/outc17/xsl/data-file.xsl" title="Data File" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:info><tcf>section.tcf</tcf><tmpl>properties.tmpl</tmpl></ouc:info>
+
+	<page type="library-database"/>
+
+	<ouc:properties label="config">
+		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >AccessScience</parameter>
+		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Includes articles from the latest edition of the McGraw-Hill Encyclopedia of Science &amp; Technology, research updates, thousands of illustrations, Science News headlines, biographies, and more.</parameter>
+		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.accessscience.com</parameter>
+
+		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
+<option value="yes" selected="true">True</option>
+<option value="no" selected="false">False</option>
+</parameter>
+
+	</ouc:properties>
+
+</document>

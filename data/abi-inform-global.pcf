@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/jesse/outc17/xsl/data-file.xsl" title="Data File" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:info><tcf>section.tcf</tcf><tmpl>properties.tmpl</tmpl></ouc:info>
+
+	<page type="library-database"/>
+
+	<ouc:properties label="config">
+		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >ABI/INFORM Global</parameter>
+		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Articles from nearly 3,000 worldwide business periodicals, including the Financial Times and the Wall Street Journal.</parameter>
+		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >https://unco.idm.oclc.org</parameter>
+
+		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
+<option value="yes" selected="true">True</option>
+<option value="no" selected="false">False</option>
+</parameter>
+
+	</ouc:properties>
+
+</document>

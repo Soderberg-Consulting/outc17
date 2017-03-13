@@ -1,0 +1,30 @@
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.ox-regioneditbutton {
+	display: none;
+}
+
+/* Subject and Resource Pages */
+h1 {
+	text-align:center;
+	border-bottom:1px solid #ccc;
+	color:#8B4E4F;
+}
+
+
+
+/* for the data files: */
+tr {
+	border-bottom:1px solid #EBEBEB;
+}
+tr td {
+	padding:4px 0;
+}
+
+/* hide the direct edit link: */
+#de {
+	display:none;
+}
+
+footer p {text-align:center}
