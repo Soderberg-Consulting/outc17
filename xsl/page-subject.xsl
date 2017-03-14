@@ -33,19 +33,13 @@ Last Updated: Enter Date Here
 
 	<!-- Get all the Data files with the first tag associated with this page -->
 	<xsl:template name="GetDataFilesWithTag">
-		<!-- Get the current file's staging path: site=www&path=data/sample.pcf -->
-		<xsl:variable name="current-page" 
-					  select="concat('site=', $ou:site, '&amp;path=', $ou:stagingpath)" />
 
-		<!-- Get page's tags: -->
-		<xsl:variable name="page-tags" select="concat('ou:/Tag/GetTags?', $current-page)" />
-
-		<!-- Get the first Tag that is associated with this subject listing page -->
-		<xsl:variable name="first-tag" select="doc( $page-tags )/tags/tag[1]/name" />
+		<!-- get page name -->
+		<xsl:variable name="page-name" select="replace($ou:filename, '.html', '')" />
 
 		<!-- Get Data Files With the Tag -->
 		<xsl:variable name="data-files-with-tag" 
-					  select="doc( concat('ou:/Tag/GetFilesWithAnyTags?site=', $ou:site, '&amp;tag=', $first-tag) )" /> 
+					  select="doc( concat('ou:/Tag/GetFilesWithAnyTags?site=', $ou:site, '&amp;tag=journal-', $page-name) )" /> 
 
 		<!-- Loop through the pages that contain the keyword: -->
 		<xsl:for-each select="$data-files-with-tag/pages/page">

@@ -25,7 +25,7 @@ Last Updated: Enter Date Here
 		<h2>All Categories:</h2>
 		
 		<div class="list-group">
-			<xsl:call-template name="getTagsInCollection" />
+			<xsl:call-template name="getAllTags" />
 		</div>
 		
 		
@@ -48,7 +48,7 @@ Last Updated: Enter Date Here
 			<!-- If the tag stars with the prefix of journal- display it -->
 			<xsl:if test="starts-with(name, $prefix)">
 				<a href="subjects/{replace(name, $prefix, '')}.html" class="list-group-item">
-					<xsl:value-of select="replace(name, $prefix, '')" /><br/>
+					<xsl:value-of select="replace(name, $prefix, '')" />
 				</a>
 			</xsl:if>
 				
