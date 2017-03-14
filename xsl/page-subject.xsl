@@ -55,6 +55,7 @@ Last Updated: Enter Date Here
 		</xsl:for-each>		
 	</xsl:template>
 
+
 	<!-- Format each individual journal -->
 	<xsl:template name="GetContentFromSingleDataFile">
 		<xsl:param name="data-url" />
@@ -76,7 +77,7 @@ Last Updated: Enter Date Here
 				<!-- Display the Database's Information: -->
 				<h2><xsl:value-of select="$page-props/parameter[@name='database-name']" /></h2>
 				<p><xsl:value-of select="$page-props/parameter[@name='database-description']" /></p>
-				<a href="{$page-props/parameter[@name='database-url']}">Open Journal</a>
+				<p><a href="{$page-props/parameter[@name='database-url']}">Open Journal</a></p>
 				<hr/>
 
 			</xsl:if>
