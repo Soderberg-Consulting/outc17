@@ -41,6 +41,7 @@ Last Updated: Enter Date Here
 	<xsl:param name="ou:created" as="xs:dateTime"/>
 	<xsl:param name="ou:modified" as="xs:dateTime"/>
 	<xsl:param name="ou:feed"/>
+	<xsl:param name="ou:stagingpath"/>
 	
 	<!-- 
 	

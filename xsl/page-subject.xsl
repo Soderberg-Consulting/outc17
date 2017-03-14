@@ -33,12 +33,12 @@ Last Updated: Enter Date Here
 
 	<!-- Get all the Data files with the first tag associated with this page -->
 	<xsl:template name="GetDataFilesWithTag">
-		<!-- Get the current file's path -->
+		<!-- Get the current file's staging path: site=www&path=data/sample.pcf -->
 		<xsl:variable name="current-page" 
-					  select="concat('site=', $ou:site, '&amp;path=', replace($ou:path, '.html', '.pcf'))" />
+					  select="concat('site=', $ou:site, '&amp;path=', $ou:stagingpath)" />
 
 		<!-- Get page's tags: -->
-		<xsl:variable name="page-tags" select="concat('ou:/Tag/GetTags?', $current-page')" />
+		<xsl:variable name="page-tags" select="concat('ou:/Tag/GetTags?', $current-page)" />
 
 		<!-- Get the first Tag that is associated with this subject listing page -->
 		<xsl:variable name="first-tag" select="doc( $page-tags )/tags/tag[1]/name" />
