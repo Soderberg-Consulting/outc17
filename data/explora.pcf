@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Explora</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Explora is an interface designed for schools and public libraries. Explora supports student research and classroom instruction with rich, reliable content and easy-to-use functionality. UNC databases included in the Explora interface are: Academic Search Premier, History Reference Center, TOPICsearch, Newspaper Source, MasterFILE Premier, MAS Ultra, Science Reference Center, GreenFILE, Topic Overviews 6-12, and EBSCO Ebook Collection.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://search.ebscohost.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >Explora</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Explora is an interface designed for schools and public libraries. Explora supports student research and classroom instruction with rich, reliable content and easy-to-use functionality. UNC databases included in the Explora interface are: Academic Search Premier, History Reference Center, TOPICsearch, Newspaper Source, MasterFILE Premier, MAS Ultra, Science Reference Center, GreenFILE, Topic Overviews 6-12, and EBSCO Ebook Collection.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >http://search.ebscohost.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

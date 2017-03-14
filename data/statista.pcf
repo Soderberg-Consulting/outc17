@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Statista</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Statista is one of the first statistic portals in the world to integrate data on over 80,000 topics from over 18,000 sources onto a single professional platform. Categorized into 21 market sectors, Statista provides direct access to quantitative data on media, business, finance, politics, and a wide variety of other areas of interest or markets. Data can be downloaded and exported for academic use.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >https://www.statista.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >Statista</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Statista is one of the first statistic portals in the world to integrate data on over 80,000 topics from over 18,000 sources onto a single professional platform. Categorized into 21 market sectors, Statista provides direct access to quantitative data on media, business, finance, politics, and a wide variety of other areas of interest or markets. Data can be downloaded and exported for academic use.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >https://www.statista.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

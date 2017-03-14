@@ -55,9 +55,9 @@ Last Updated: Enter Date Here
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
 				<!-- display content -->
-				<h2><xsl:value-of select="$page-props/parameter[@name='database-name']" /></h2>
-				<p><xsl:value-of select="$page-props/parameter[@name='database-description']" /></p>
-				<p><a href="{$page-props/parameter[@name='database-url']}">Open Journal</a></p>
+				<h2><xsl:value-of select="$page-props/parameter[@name='journal-name']" /></h2>
+				<p><xsl:value-of select="$page-props/parameter[@name='journal-description']" /></p>
+				<p><a href="{$page-props/parameter[@name='journal-url']}">Open Journal</a></p>
 				<ul class="list-inline">
 					<xsl:call-template name="getTagsForJournal">
 						<xsl:with-param name="path" select="concat($ou:dirname, '/data/', node())" />

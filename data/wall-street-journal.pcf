@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Wall Street Journal</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Full-text articles from the Wall Street Journal.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >https://www.wallstreetjournal.org</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >Wall Street Journal</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Full-text articles from the Wall Street Journal.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >https://www.wallstreetjournal.org</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

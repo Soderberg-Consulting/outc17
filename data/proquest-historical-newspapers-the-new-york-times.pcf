@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >ProQuest Historical Newspapers: The New York Times</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Full Text of the New York Times, with index coverage from 1985-1993</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://search.proquest.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >ProQuest Historical Newspapers: The New York Times</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Full Text of the New York Times, with index coverage from 1985-1993</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >http://search.proquest.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

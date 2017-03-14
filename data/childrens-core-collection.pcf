@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Children's Core Collection</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Children's Core Collection is the ideal collection development, readers' advisory, and curriculum support resource for educators and librarians working with elementary students. Containing more than 45,000 titles, this rich resource covers fiction and nonfiction works, story collections, and picture books recommended for readers in preschool through sixth grade.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://search.ebscohost.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >Children's Core Collection</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Children's Core Collection is the ideal collection development, readers' advisory, and curriculum support resource for educators and librarians working with elementary students. Containing more than 45,000 titles, this rich resource covers fiction and nonfiction works, story collections, and picture books recommended for readers in preschool through sixth grade.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >http://search.ebscohost.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

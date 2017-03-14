@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Digital Theatre Plus</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Digital Theatre Plus offers high-quality streaming video of leading British theatre productions, as well as collections from the Royal Opera House, the Broadway Digital Archive, and the National Jewish Theatre.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.digitaltheatreplus.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >Digital Theatre Plus</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Digital Theatre Plus offers high-quality streaming video of leading British theatre productions, as well as collections from the Royal Opera House, the Broadway Digital Archive, and the National Jewish Theatre.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >http://www.digitaltheatreplus.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>

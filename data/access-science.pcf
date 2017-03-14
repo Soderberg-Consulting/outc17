@@ -9,9 +9,9 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >AccessScience</parameter>
-		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >Includes articles from the latest edition of the McGraw-Hill Encyclopedia of Science &amp; Technology, research updates, thousands of illustrations, Science News headlines, biographies, and more.</parameter>
-		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.accessscience.com</parameter>
+		<parameter section="Journal Information" name="journal-name" type="text" group="Everyone" prompt="Name" >AccessScience</parameter>
+		<parameter name="journal-description" type="text" group="Everyone" prompt="Description" >Includes articles from the latest edition of the McGraw-Hill Encyclopedia of Science &amp; Technology, research updates, thousands of illustrations, Science News headlines, biographies, and more.</parameter>
+		<parameter name="journal-url" type="text" group="Everyone" prompt="URL" >http://www.accessscience.com</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
 <option value="yes" selected="true">True</option>
