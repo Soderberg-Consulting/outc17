@@ -44,11 +44,11 @@ Last Updated: Enter Date Here
 		<xsl:variable name="first-tag" select="doc( $page-tags )/tags/tag[1]/name" />
 
 		<!-- Get Data Files With the Tag -->
-		<xsl:variable name="tag-select" 
+		<xsl:variable name="data-files-with-tag" 
 					  select="doc( concat('ou:/Tag/GetFilesWithAnyTags?site=', $ou:site, '&amp;tag=', $first-tag) )" /> 
 
 		<!-- Loop through the pages that contain the keyword: -->
-		<xsl:for-each select="$tag-select/pages/page">
+		<xsl:for-each select="$data-files-with-tag/pages/page">
 
 			<!-- Sort the pages by the filename -->
 			<xsl:sort select="path" />
@@ -71,11 +71,11 @@ Last Updated: Enter Date Here
 		<xsl:variable name="page-content" select="doc($full-path)/document" />
 
 		<!-- Check to see if it is a data file since the subject page also has this tag associated with it -->
-		<xsl:if test="$page-content/page/@type = 'library-database'">
+		<xsl:if test="$page-content/page/@type = 'library-journal'">
 
 			<!-- Create variable of the props section for better readability -->
 			<xsl:variable name="page-props" select="$page-content/ouc:properties[@label='config']" />
-
+			
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
 

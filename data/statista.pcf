@@ -6,7 +6,7 @@
 <document xmlns:ouc="http://omniupdate.com/XSL/Variables">
 	<ouc:info><tcf>section.tcf</tcf><tmpl>properties.tmpl</tmpl></ouc:info>
 
-	<page type="library-database"/>
+	<page type="library-journal"/>
 
 	<ouc:properties label="config">
 		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Statista</parameter>
