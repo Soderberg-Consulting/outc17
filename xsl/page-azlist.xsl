@@ -33,18 +33,14 @@ Last Updated: Enter Date Here
 
 	
 	<xsl:template name="allJournals">
+		<!-- Create variable for the /data folder path -->
 		<xsl:variable name="data-folder" select="concat($ou:root, $ou:site, $ou:dirname, '/data')" />	
 		
-		<!-- Create Sorted Version First -->
-		<xsl:variable name="sortedcopy">
-			<xsl:for-each select="doc($data-folder)/list/file">
-				<xsl:sort select="." order="ascending"/>
-				<xsl:copy-of select="."/>
-			</xsl:for-each>
-		</xsl:variable>
-
 		<!-- Loop through list and get the file name: -->
-		<xsl:for-each select="$sortedcopy/file">
+		<xsl:for-each select="doc($data-folder)/list/file">
+			
+			<!-- sort based on filename -->
+			<xsl:sort select="." order="ascending"/>
 			
 			<!-- Get contents of the file -->
 			<xsl:variable name="page-content" select="doc(concat($data-folder,'/', node()))" />
@@ -67,6 +63,7 @@ Last Updated: Enter Date Here
 			</xsl:if>
 			
 		</xsl:for-each>
+		
 	</xsl:template>
 
 	
