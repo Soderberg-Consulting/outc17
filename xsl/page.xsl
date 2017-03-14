@@ -23,7 +23,7 @@ Last Updated: Enter Date Here
 
 			<head>
 				<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.0/cerulean/bootstrap.min.css" rel="stylesheet"/>
-				<link href="{{f:14527033}}" rel="stylesheet" />
+				<link href="/outc17/tag-demo.css" rel="stylesheet" />
 				<title><xsl:value-of select="ouc:properties[@label='config']/parameter[@name='page-title']" /></title>
 			</head>
 
@@ -38,8 +38,8 @@ Last Updated: Enter Date Here
 				</div>
 				
 				<footer>
-					<p><a href="{{f:14527812}}" class="btn btn-default">A-Z List</a></p>
-					<p><a href="{{f:14172859}}" class="btn btn-default">Home</a></p>
+					<p><a href="/outc17/azlist.html" class="btn btn-default">A-Z List</a></p>
+					<p><a href="/outc17/index.html" class="btn btn-default">Home</a></p>
 				</footer>
 			</body>
 		</html>

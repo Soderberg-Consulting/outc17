@@ -33,7 +33,6 @@ Last Updated: Enter Date Here
 
 	
 	<xsl:template name="allJournals">
-	
 		<xsl:variable name="data-folder" select="concat($ou:root, $ou:site, $ou:dirname, '/data')" />	
 		
 		<!-- Create Sorted Version First -->
@@ -68,7 +67,6 @@ Last Updated: Enter Date Here
 			</xsl:if>
 			
 		</xsl:for-each>
-		
 	</xsl:template>
 
 	
@@ -76,7 +74,8 @@ Last Updated: Enter Date Here
 		<xsl:param name="path" />
 
 		<!-- create the path to the list of tags: -->
-		<xsl:variable name="tag-path" select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
+		<xsl:variable name="tag-path" 
+					  select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
 
 		<!-- loop though the tags on the page:-->
 		<xsl:for-each select="doc( $tag-path )/tags/tag">
