@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?pcf-stylesheet path="/jesse/outc17/xsl/azlist-page.xsl" title="Interior Page 1.1" extension="html"?>
+<?pcf-stylesheet path="/jesse/outc17/xsl/page-azlist.xsl" title="A-Z Index" extension="html"?>
 
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
 

@@ -9,13 +9,13 @@
 	<page type="library-journal"/>
 
 	<ouc:properties label="config">
-		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >Sample Journal</parameter>
+		<parameter section="Database Information" name="database-name" type="text" group="Everyone" prompt="Database Name" >A Sample Journal</parameter>
 		<parameter name="database-description" type="text" group="Everyone" prompt="Description" >This is a sample journal that can be used as a template!</parameter>
 		<parameter name="database-url" type="text" group="Everyone" prompt="URL" >http://www.unco.edu</parameter>
 
 		<parameter section="Active" name="active" type="select" group="Everyone" prompt="Active">
-<option value="yes" selected="true">True</option>
-<option value="no" selected="false">False</option>
+<option value="yes" selected="false">True</option>
+<option value="no" selected="true">False</option>
 </parameter>
 
 	</ouc:properties>
