@@ -17,6 +17,7 @@ Last Updated: Enter Date Here
 	exclude-result-prefixes="ou xsl xs fn ouc">
 	
 	<xsl:import href="ouvariables.xsl"/>
+	<xsl:import href="common.xsl"/>
 	
 	<xsl:template match="/document">
 		<html lang="en">
@@ -34,26 +35,11 @@ Last Updated: Enter Date Here
 						<p><strong>Data File:</strong> This file does not need to be published, however the pages that pull data from this file do.</p>
 					</div>
 					
+					<xsl:call-template name="display-journal">
+						<xsl:with-param name="page-props" select="ouc:properties[@label='config']" />
+					</xsl:call-template>
 					
-					<table width="100%">
-						<thead>
-							<th width="25%">Property Name</th>
-							<th width="75%">Value</th>
-						</thead>
-						<xsl:for-each select="ouc:properties[@label='config']/parameter">
-							<tr>
-								<td><xsl:value-of select="@prompt"/></td>
-								<xsl:choose>
-									<xsl:when test="@type = 'select'">
-										<td><xsl:value-of select="option[@selected = 'true']"/></td>
-									</xsl:when>
-									<xsl:otherwise>
-										<td><xsl:value-of select="."/></td>
-									</xsl:otherwise>
-								</xsl:choose>
-							</tr>
-						</xsl:for-each>
-					</table>
+					<hr/>
 					
 					<h3>Tags:</h3>
 					<p>Tags are used for 'subject' and 'resource type' sorting.</p>

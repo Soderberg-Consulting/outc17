@@ -18,6 +18,7 @@ Last Updated: Enter Date Here
 
 	<xsl:import href="ouvariables.xsl"/>
 	<xsl:import href="page.xsl"/>
+	<xsl:import href="common.xsl"/>
 
 	
 	<!-- Content template that is called from page.xsl: -->
@@ -55,7 +56,6 @@ Last Updated: Enter Date Here
 		</xsl:for-each>		
 	</xsl:template>
 
-
 	<!-- Format each individual journal -->
 	<xsl:template name="GetContentFromSingleDataFile">
 		<xsl:param name="data-url" />
@@ -74,10 +74,10 @@ Last Updated: Enter Date Here
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
 
-				<!-- Display the Database's Information: -->
-				<h2><xsl:value-of select="$page-props/parameter[@name='journal-name']" /></h2>
-				<p><xsl:value-of select="$page-props/parameter[@name='journal-description']" /></p>
-				<p><a href="{$page-props/parameter[@name='journal-url']}">Open Journal</a></p>
+				<!-- Display the Database's Information with a template in common.xsl: -->
+				<xsl:call-template name="displayJournal">
+					<xsl:with-param name="page-props" select="$page-props" />
+				</xsl:call-template>
 				<hr/>
 
 			</xsl:if>

@@ -18,6 +18,7 @@ Last Updated: Enter Date Here
 
 	<xsl:import href="ouvariables.xsl"/>
 	<xsl:import href="page.xsl"/>
+	<xsl:import href="common.xsl"/>
 
 	
 	<!-- Content template that is called from page.xsl: -->
@@ -50,10 +51,13 @@ Last Updated: Enter Date Here
 			
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
-				<!-- display content -->
-				<h2><xsl:value-of select="$page-props/parameter[@name='journal-name']" /></h2>
-				<p><xsl:value-of select="$page-props/parameter[@name='journal-description']" /></p>
-				<p><a href="{$page-props/parameter[@name='journal-url']}">Open Journal</a></p>
+				
+				<!-- Display the Database's Information with a template in common.xsl: -->
+				<xsl:call-template name="displayJournal">
+					<xsl:with-param name="page-props" select="$page-props" />
+				</xsl:call-template>
+				
+				<!-- Pull in the tags: -->
 				<ul class="list-inline">
 					<xsl:call-template name="getTagsForJournal">
 						<xsl:with-param name="path" select="concat($ou:dirname, '/data/', node())" />
@@ -71,8 +75,7 @@ Last Updated: Enter Date Here
 		<xsl:param name="path" />
 
 		<!-- create the path to the list of tags: -->
-		<xsl:variable name="tag-path" 
-					  select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
+		<xsl:variable name="tag-path" select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
 
 		<!-- loop though the tags on the page:-->
 		<xsl:for-each select="doc( $tag-path )/tags/tag">
