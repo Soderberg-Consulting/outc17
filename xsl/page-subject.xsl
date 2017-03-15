@@ -34,13 +34,15 @@ Last Updated: Enter Date Here
 
 	<!-- Get all the Data files with the first tag associated with this page -->
 	<xsl:template name="GetDataFilesWithTag">
-
 		<!-- get page name -->
 		<xsl:variable name="page-name" select="replace($ou:filename, '.html', '')" />
 
+		<!-- Build the api call as a string -->
+		<xsl:variable name="api-call" 
+			select="concat('ou:/Tag/GetFilesWithAnyTags?site=', $ou:site, '&amp;tag=journal-', $page-name)" />
+		
 		<!-- Get Data Files With the Tag -->
-		<xsl:variable name="data-files-with-tag" 
-					  select="doc( concat('ou:/Tag/GetFilesWithAnyTags?site=', $ou:site, '&amp;tag=journal-', $page-name) )" /> 
+		<xsl:variable name="data-files-with-tag" select="doc( $api-call )" /> 
 
 		<!-- Loop through the pages that contain the keyword: -->
 		<xsl:for-each select="$data-files-with-tag/pages/page">

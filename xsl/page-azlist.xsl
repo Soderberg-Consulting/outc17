@@ -32,7 +32,7 @@ Last Updated: Enter Date Here
 	</xsl:template>
 	
 
-	
+	<!-- Template that pulls in all files/journals within a single folder -->
 	<xsl:template name="allJournals">
 		<!-- Create variable for the /data folder path -->
 		<xsl:variable name="data-folder" select="concat($ou:root, $ou:site, $ou:dirname, '/data')" />	
@@ -65,9 +65,7 @@ Last Updated: Enter Date Here
 				</ul>
 				<hr/>
 			</xsl:if>
-			
 		</xsl:for-each>
-		
 	</xsl:template>
 
 	
@@ -75,10 +73,11 @@ Last Updated: Enter Date Here
 		<xsl:param name="path" />
 
 		<!-- create the path to the list of tags: -->
-		<xsl:variable name="tag-path" select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
+		<xsl:variable name="api-call"
+					  select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
 
 		<!-- loop though the tags on the page:-->
-		<xsl:for-each select="doc( $tag-path )/tags/tag">
+		<xsl:for-each select="doc( $api-call )/tags/tag">
 			<li>
 				<a href="subjects/{replace(name, 'journal-', '')}.html" class="label label-default">
 					<xsl:value-of select="replace(name, 'journal-', '')" />
