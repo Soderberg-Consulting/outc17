@@ -70,7 +70,7 @@ Last Updated: Enter Date Here
 			<xsl:sort select="name" order="ascending"/>
 			
 			<a href="subjects/{replace(name, $prefix, '')}.html" class="list-group-item">
-				<xsl:value-of select="replace(name, $prefix, '')" /><br/>
+				<xsl:value-of select="replace(name, $prefix, '')" />
 			</a>
 				
 		</xsl:for-each>
