@@ -16,9 +16,7 @@ Last Updated: Enter Date Here
 				xmlns:ouc="http://omniupdate.com/XSL/Variables"
 				exclude-result-prefixes="ou xsl xs fn ouc">
 
-	<xsl:import href="ouvariables.xsl"/>
 	<xsl:import href="page.xsl"/>
-	<xsl:import href="common.xsl"/>
 
 	
 	<!-- Content template that is called from page.xsl: -->

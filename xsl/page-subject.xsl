@@ -16,10 +16,7 @@ Last Updated: Enter Date Here
 				xmlns:ouc="http://omniupdate.com/XSL/Variables"
 				exclude-result-prefixes="ou xsl xs fn ouc">
 
-	<xsl:import href="ouvariables.xsl"/>
-	<xsl:import href="page.xsl"/>
-	<xsl:import href="common.xsl"/>
-
+	<xsl:import href="page.xsl"/>	
 	
 	<!-- Content template that is called from page.xsl: -->
 	<xsl:template name="content">
@@ -52,17 +49,17 @@ Last Updated: Enter Date Here
 
 			<!-- Pass the path to a new function to handle the next step -->
 			<xsl:call-template name="GetContentFromSingleDataFile">
-				<xsl:with-param name="data-url" select="path" />
+				<xsl:with-param name="path" select="path" />
 			</xsl:call-template>
 
 		</xsl:for-each>		
 	</xsl:template>
 
-	<!-- Format each individual journal -->
+	<!-- Get the content from a single data file: -->
 	<xsl:template name="GetContentFromSingleDataFile">
-		<xsl:param name="data-url" />
+		<xsl:param name="path" />
 		<!-- Get the full path to the data file: -->
-		<xsl:variable name="full-path" select="concat($ou:root, $ou:site, $data-url)" />
+		<xsl:variable name="full-path" select="concat($ou:root, $ou:site, $path)" />
 
 		<!-- Get Data File Content -->
 		<xsl:variable name="page-content" select="doc($full-path)/document" />

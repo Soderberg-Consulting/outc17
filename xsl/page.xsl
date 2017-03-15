@@ -17,6 +17,7 @@ Last Updated: Enter Date Here
 				exclude-result-prefixes="ou xsl xs fn ouc">
 
 	<xsl:import href="ouvariables.xsl"/>
+	<xsl:import href="common.xsl"/>
 
 	<xsl:template match="/document">
 		<html lang="en">
