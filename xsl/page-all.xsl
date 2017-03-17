@@ -36,10 +36,10 @@ Last Updated: Enter Date Here
 		<xsl:variable name="prefix" select="'journal-'" />
 		
 		<!-- Get all tags from OU Campus -->
-		<xsl:variable name="allTags" select="doc('ou:/Tag/GetAllTags')/tags" />
+		<xsl:variable name="all-tags" select="doc('ou:/Tag/GetAllTags')/tags" />
 		
 		<!-- Loop through all tags -->
-		<xsl:for-each select="$allTags/tag">
+		<xsl:for-each select="$all-tags/tag">
 			
 			<!-- Sort the list of tags based on the node name -->
 			<xsl:sort select="name" order="ascending"/>
