@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?pcf-stylesheet path="/outc17/xsl/data-file.xsl" title="Data File" extension="html"?>
+<?pcf-stylesheet path="/tag-demo/xsl/data-file.xsl" title="Data File" extension="html"?>
 
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
 

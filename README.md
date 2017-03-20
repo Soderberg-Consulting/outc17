@@ -29,7 +29,7 @@ Publish all files and go to the index page.
 The XSL path may need to be changed on all of the XSL files. If you upload it at the root of OU Campus then you will be fine:
 
 ```
-<?pcf-stylesheet path="/outc17/xsl/page-all.xsl" title="Interior Page 1.1" extension="html"?>
+<?pcf-stylesheet path="/tag-demo/xsl/page-all.xsl" title="Interior Page 1.1" extension="html"?>
 ```
 
 However, if you upload it into a directory, this will need to be updated to reflect the new path. Use find and replace.
