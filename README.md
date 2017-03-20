@@ -1,7 +1,10 @@
-# outc17
-Repo for a talk at the 2017 OmniUpdate User Training Conference
+# Pulling in Content with Tags and Datafiles
 
-## Demo
+Code for a talk that I gave at the 2017 OmniUpdate User Training Conference in San Diego.
+
+![Pulling in Content with Tags and Datafiles](https://www.jessclark.com/wp-content/uploads/2017/03/home-slide.jpg)
+
+## Demo &amp; Resources
 
 * [Tag Demo](http://www.unco.edu/jesse/outc17/)
 * [Slides and Resourcs from the Presentation](http://jessclark.com/outc17)
@@ -37,3 +40,5 @@ However, if you upload it into a directory, this will need to be updated to refl
 ## Contact
 
 Jesse.Clark@unco.edu 
+
+![Thank You!](https://www.jessclark.com/wp-content/uploads/2017/03/thank-you-slide-1.jpg)
