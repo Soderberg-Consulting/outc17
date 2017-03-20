@@ -7,8 +7,8 @@ IMPLEMENTATION VARIABLES
 Define global implementation variables here, so that they may be accessed by all page types and in the info/debug tabs.
 This also provides a convenient area for complicated logic to exist without clouding up the general xsl/html structure.
 
-Contributors: Your Name Here
-Last Updated: Enter Date Here
+Contributors: OU Campus
+Last Updated: 
 -->
 <xsl:stylesheet version="3.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"

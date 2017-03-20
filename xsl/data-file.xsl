@@ -5,8 +5,8 @@ Implementations Skeletor v3 - 5/10/2014
 
 SECTION PROPERTIES 
 
-Contributors: Your Name Here
-Last Updated: Enter Date Here
+Contributors: Jesse Clark <jesse.clark@unco.edu>
+Last Updated: March 20th, 2017
 -->
 <xsl:stylesheet version="3.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
