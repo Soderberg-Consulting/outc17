@@ -7,7 +7,7 @@ Repo for a talk at the 2017 OmniUpdate User Training Conference
 * [Slides and Resourcs from the Presentation](http://jessclark.com/outc17)
 
 ## Install
-Upload the files to your OU Instance.
+Upload the folder /tag-demo/ to the root of your OU Instance. If it is uploaded to a sub directory, see the note below about updating the XSL Path.
 
 ### Tags
 
