@@ -11,7 +11,6 @@
 	<ouc:info><tcf>section.tcf</tcf><tmpl>interior.tmpl</tmpl></ouc:info>
 
 	<ouc:properties label="config">
-		<parameter name="page-title" type="text" group="Everyone" prompt="Page Title">History Journals</parameter>
 	</ouc:properties>
 
 </document>

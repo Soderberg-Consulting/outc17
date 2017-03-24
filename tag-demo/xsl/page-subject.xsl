@@ -21,7 +21,8 @@ Last Updated: March 20th, 2017
 	<!-- Content template that is called from page.xsl: -->
 	<xsl:template name="content">
 		<h1>
-			<xsl:value-of select="ouc:properties[@label='config']/parameter[@name='page-title']" />
+			<!-- Header 1 will be the filename without the .html: -->
+			<xsl:value-of select="replace($ou:filename, '.html', '')" /> Journals
 		</h1>
 
 		<xsl:call-template name="GetDataFilesWithTag" />
