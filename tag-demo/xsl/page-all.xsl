@@ -6,7 +6,7 @@ Implementations Skeletor v3 - 5/10/2014
 SECTION PROPERTIES 
 
 Contributors: Jesse Clark <jesse.clark@unco.edu>
-Last Updated: March 20th, 2017
+Last Updated: March 29th, 2017
 -->
 <xsl:stylesheet version="3.0" 
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -46,7 +46,7 @@ Last Updated: March 20th, 2017
 			
 			<!-- If the tag stars with the prefix of journal- display it -->
 			<xsl:if test="starts-with(name, $prefix)">
-				<a href="subjects/{replace(name, $prefix, '')}.html" class="list-group-item">
+				<a href="categories/{replace(name, $prefix, '')}.html" class="list-group-item">
 					<xsl:value-of select="replace(name, $prefix, '')" />
 				</a>
 			</xsl:if>
@@ -69,7 +69,7 @@ Last Updated: March 20th, 2017
 			<!-- Sort the list of tags based on the node name -->
 			<xsl:sort select="name" order="ascending"/>
 			
-			<a href="subjects/{replace(name, $prefix, '')}.html" class="list-group-item">
+			<a href="categories/{replace(name, $prefix, '')}.html" class="list-group-item">
 				<xsl:value-of select="replace(name, $prefix, '')" />
 			</a>
 				

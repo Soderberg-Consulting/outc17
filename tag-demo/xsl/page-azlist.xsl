@@ -49,7 +49,7 @@ Last Updated: March 29th, 2017
 
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
-				
+
 				<!-- Display the Database's Information with a template in common.xsl: -->
 				<xsl:call-template name="displayJournal">
 					<xsl:with-param name="page-props" select="$page-props" />
@@ -79,7 +79,7 @@ Last Updated: March 29th, 2017
 		<!-- loop though the tags on the page:-->
 		<xsl:for-each select="$all-tags/tag">
 			<li>
-				<a href="subjects/{replace(name, 'journal-', '')}.html" class="label label-default">
+				<a href="categories/{replace(name, 'journal-', '')}.html" class="label label-default">
 					<xsl:value-of select="replace(name, 'journal-', '')" />
 				</a>
 			</li>
