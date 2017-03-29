@@ -33,17 +33,23 @@ Last Updated: March 29th, 2017
 	<!-- Template that pulls in all files/journals within a single folder -->
 	<xsl:template name="allJournals">
 		<!-- Create variable for the /data folder path -->
-		<xsl:variable name="data-folder" select="concat($ou:root, $ou:site, $ou:dirname, '/data')" />	
+		<xsl:variable name="data-folder" select="concat($ou:root, $ou:site, $ou:dirname, '/data')" />
+
 		<!-- Loop through list and get the file name: -->
 		<xsl:for-each select="doc($data-folder)/list/file">
+
 			<!-- sort based on filename -->
-			<xsl:sort select="." order="ascending"/>
+			<xsl:sort select="node()" order="ascending"/>
+
 			<!-- Get contents of the file -->
 			<xsl:variable name="page-content" select="doc(concat($data-folder,'/', node()))" />
+
 			<!-- Create variable for the page properties -->
 			<xsl:variable name="page-props" select="$page-content/document/ouc:properties[@label='config']" />
+
 			<!-- Check to see if the data file is set to 'active' -->
 			<xsl:if test="$page-props/parameter[@name='active']/option[@selected='true'] = 'True'">
+				
 				<!-- Display the Database's Information with a template in common.xsl: -->
 				<xsl:call-template name="displayJournal">
 					<xsl:with-param name="page-props" select="$page-props" />
@@ -59,7 +65,7 @@ Last Updated: March 29th, 2017
 		</xsl:for-each>
 	</xsl:template>
 
-	
+	<!-- Get all the tags associated with a journal/data-file -->
 	<xsl:template name="getTagsForJournal">
 		<xsl:param name="path" />
 

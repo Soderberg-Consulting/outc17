@@ -29,7 +29,6 @@ Last Updated: March 20th, 2017
 
 	</xsl:template>
 	
-
 	<!-- Get all the Data files with the first tag associated with this page -->
 	<xsl:template name="GetDataFilesWithTag">
 		<!-- get page name -->
@@ -55,6 +54,9 @@ Last Updated: March 20th, 2017
 
 		</xsl:for-each>		
 	</xsl:template>
+
+	
+
 
 	<!-- Get the content from a single data file: -->
 	<xsl:template name="GetContentFromSingleDataFile">
