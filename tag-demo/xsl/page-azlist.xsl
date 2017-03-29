@@ -6,7 +6,7 @@ Implementations Skeletor v3 - 5/10/2014
 SECTION PROPERTIES 
 
 Contributors: Jesse Clark <jesse.clark@unco.edu>
-Last Updated: March 20th, 2017
+Last Updated: March 29th, 2017
 -->
 <xsl:stylesheet version="3.0" 
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -67,8 +67,11 @@ Last Updated: March 20th, 2017
 		<xsl:variable name="api-call"
 					  select="concat('ou:/Tag/GetTags?', 'site=', $ou:site, '&amp;path=', $path )" />
 
+		<!-- get all the tags associated with a single data file: -->
+		<xsl:variable name="all-tags" select="doc( $api-call )/tags" />
+
 		<!-- loop though the tags on the page:-->
-		<xsl:for-each select="doc( $api-call )/tags/tag">
+		<xsl:for-each select="$all-tags/tag">
 			<li>
 				<a href="subjects/{replace(name, 'journal-', '')}.html" class="label label-default">
 					<xsl:value-of select="replace(name, 'journal-', '')" />
