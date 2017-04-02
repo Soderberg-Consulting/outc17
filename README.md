@@ -7,7 +7,8 @@ Code for a talk that I gave at the 2017 OmniUpdate User Training Conference in S
 ## Demo &amp; Resources
 
 * [Tag Demo](http://www.unco.edu/jesse/outc17/)
-* [Slides and Resourcs from the Presentation](http://jessclark.com/outc17)
+* [Slides](https://www.jessclark.com/wp-content/uploads/2017/04/OUTC17-Jesse-Clark-Tags.pdf)
+* [Additional Resourcs from the Presentation](http://jessclark.com/outc17)
 
 ## Install
 Upload the folder /tag-demo/ to the root of your OU Instance. If it is uploaded to a sub directory, see the note below about updating the XSL Path.
